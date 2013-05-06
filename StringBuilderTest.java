@@ -35,18 +35,4 @@ public class StringBuilderTest {
         return time;
     }
 
-    public static long getStringBuilderTime() {
-        String tempstr = "我是測試!!";
-        int times = 50000;
-        long start = System.currentTimeMillis();
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < times; i++) {
-            sb.append(tempstr);
-        }
-        long end = System.currentTimeMillis();
-        long time = end - start;
-        // System.out.println(sb.toString().length());
-
-        return time;
-    }
 }
